@@ -1,0 +1,55 @@
+{
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "morgan": "^1.10.1",
+    "nodemon": "^3.1.10",
+    "pg": "^8.16.3",
+    "pino": "^9.7.0",
+    "pino-pretty": "^13.1.1",
+    "tslib": "^2.8.1"
+  },
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.27.1",
+    "@types/express": "^5.0.3",
+    "@types/jest": "^30.0.0",
+    "@types/morgan": "^1.9.10",
+    "@types/node": "^24.1.0",
+    "@types/pg": "^8.15.5",
+    "@types/supertest": "^6.0.2",
+    "jest": "^30.0.5",
+    "supertest": "^7.0.0",
+    "ts-jest": "^29.1.8",
+    "typescript": "^5.9.2"
+  },
+  "name": "express-postgres-ts-template",
+  "version": "1.0.0",
+  "description": "Starter template for a production ready express application.",
+  "main": "src/server.ts",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:full": "./start_service.sh && jest",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "nodemon",
+    "prettier": "prettier --write \"src/**/*.ts\"",
+    "prettier:check": "prettier --check \"src/**/*.ts\"",
+    "lint": "eslint --ignore-path .eslintignore \"src/**/*.ts\" --fix",
+    "lint:check": "eslint --ignore-path .eslintignore \"src/**/*.ts\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/okHadi/express-postgres-ts-template.git"
+  },
+  "author": "okHadi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/okHadi/express-postgres-ts-template/issues"
+  },
+  "homepage": "https://github.com/okHadi/express-postgres-ts-template#readme"
+}
